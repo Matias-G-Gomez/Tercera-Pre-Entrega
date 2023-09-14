@@ -1,0 +1,32 @@
+header{
+    h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 3.125rem;
+    }
+    nav{
+        ul{
+            display: grid;
+            @include tamaño(100%,auto);
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 3rem;
+            list-style: none;
+            background-color: $background-nav-fondo;
+            background-image: linear-gradient(45deg, #704732 0%, #f2cab6 22%, $background-nav-fondo 49%, #705e54 75%, #bd7855 100%);
+            text-align: center;
+
+            li{
+                &:hover{
+                    background-color: $background-nav;
+                    color: black;
+                }
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                    padding: 0.625rem .625rem;
+                }
+            }
+        }
+    }
+}

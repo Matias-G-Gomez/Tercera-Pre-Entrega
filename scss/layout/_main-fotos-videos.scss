@@ -1,0 +1,28 @@
+main{
+    .fotos-general{
+        margin: 2rem 2rem 2rem 2rem;
+        @include flex(row,wrap,center,center,0rem);
+        max-width: 100%;
+    }
+    
+    .imagen-1{
+        @include img1(30rem,auto, 1.25rem 1.25rem 1.25rem 1.25rem);
+    }
+    
+    .imagen-2{
+        @extend .imagen-1;
+        margin: 1rem 6.25rem 1rem 6.25rem;
+    }
+    
+    .imagen-3{
+        @extend .imagen-1;
+    }
+    
+    
+    
+    .video-general iframe{
+        @include flex(row,nowrap,center,center,0rem);
+        @include tamaño(30%, 20rem);
+        margin-left: 35%;
+    }
+}

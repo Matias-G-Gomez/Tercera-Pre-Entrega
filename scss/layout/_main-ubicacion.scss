@@ -1,0 +1,6 @@
+main{
+    .mapa{
+        @include flex(row, nowrap, center, center, 0rem);
+        margin: .625rem .625rem .625rem .625rem;
+    }
+}

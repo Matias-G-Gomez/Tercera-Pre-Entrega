@@ -1,0 +1,23 @@
+main{
+    h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.25rem;
+    }
+    .formulario{
+        font-size: 2rem;
+        margin: auto;
+        background-color: white;
+        @include tamaño(31.25rem,auto);
+        .cuadro-consulta{
+            @include tamaño(31.25rem, 11rem);
+        }
+    }
+    .boton-enviar{
+        @include flex(row,nowrap,center,center,0rem);
+        margin: auto auto 12rem auto;
+        @include tamaño(8rem, 3rem);
+    }
+}
+
+

@@ -1,0 +1,20 @@
+main{
+    .foto-principal{
+        background-size: cover;
+        @include flex(row,nowrap,center,center,0rem);
+        overflow: hidden;
+        margin-top: .625rem;
+        img{
+            @include tamaño(120rem,40rem);
+            object-fit: cover;
+        }
+    }
+    
+    .texto-principal{
+        color: $background-nav;
+        font-style: italic;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-family-all;
+    }
+}

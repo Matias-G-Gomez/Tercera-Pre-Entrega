@@ -1,0 +1,94 @@
+@media(max-width:425px){
+    /* HOTEL GERMARGO */
+    main{
+        .texto-principal{
+            font-size: 1rem;
+        }
+    }
+
+    /* FOTOS Y VIDEOS */
+    main{
+        .fotos-general{
+            margin: 1rem 1rem 1rem 1rem;
+            .imagen-1{
+                @include tamaño(25rem, auto);
+                border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+            }
+                
+            .imagen-2{
+                @include tamaño(25rem, auto);
+                border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+                margin-left: 1.25rem;
+                margin-right: 1.25rem;
+            }
+                
+            .imagen-3{
+                @include tamaño(25rem, auto);
+                border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }   
+        .video-general iframe{
+                @include tamaño(95%, 20rem);
+                margin: auto auto 2rem auto;
+        }
+    }
+
+    /* CONTACTO */
+    main{
+        h2{
+        font-size: 1.5rem;
+        }
+        .formulario{
+            font-size: 1.5rem;
+            .cuadro-consulta{
+                @include tamaño(30rem, 8rem);
+            }
+        }
+        .boton-enviar{
+            @include tamaño(6rem, auto);
+        }
+    }
+
+    /* HEADER */
+    header{
+        .grid-nav{
+            a{
+                font-size: 0.75rem;
+            }
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    /* FOOTER */
+    footer{
+        .container{
+            margin-top: 2rem;
+            .redes-general{
+                margin-left: auto;
+                margin-right: 1.25rem;
+                img{
+                    @include tamaño(1.5rem, 1.5rem);
+                }
+            }
+            .copyright{
+                font-size: 0.8rem;
+            }
+        }
+        .container-fluid{
+            .col-md-5{
+                img{
+                    @include tamaño(1.5rem, 1.5rem);
+                }
+            }
+            .col-md-7{
+                p{
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

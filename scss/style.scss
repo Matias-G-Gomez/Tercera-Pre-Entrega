@@ -1,0 +1,32 @@
+/* PRIMERO LAS VARIABLES Y MIXINS*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/* SEGUNDO EL RESET Y LAS TIPOGRAFÍAS */
+@import "./base/reset";
+@import "./base/typo";
+
+/* TERCERO LAYOUT */
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-el-hotel";
+@import "./layout/main-fotos-videos";
+@import "./layout/main-contacto";
+@import "./layout/main-ubicacion";
+@import "./layout/footer";
+
+/* CUARTO LOS COMPONENTES */
+@import "./components/bootstrap";
+@import "./components/botones";
+@import "./components/cards";
+
+/* ÚLTIMO LOS MEDIAQUERY */
+@import "./layout/media/media768.scss";
+@import "./layout/media/media425.scss";
+@import "./layout/media/media320.scss";
+
+        /* RESPONSIVE: DE GRANDE A CHICO */
+
+
+        /* MB DE CHICO A GRANDE */

@@ -1,0 +1,68 @@
+@media(max-width:768px){
+    /* INICIO */
+    main{
+        .texto-principal{
+            font-size: 1.75rem;
+        }
+    }
+
+
+    /* FOTOS Y VIDEOS */
+    main{
+        .fotos-general{
+            .imagen-1{
+                @include img1(30rem, auto, 1.25rem 1.25rem 1.25rem 1.25rem);
+            }
+            .imagen-2{
+                @include img1(30rem, auto, 1.25rem 1.25rem 1.25rem 1.25rem);
+                margin: 1rem 6.25rem 1rem 6.25rem;
+            }
+            .imagen-3{
+                @include img1(30rem, auto, 1.25rem 1.25rem 1.25rem 1.25rem);
+            }
+        }
+        .video-general{
+            iframe{
+            @include flex(row,nowrap,center,center,0rem);
+            @include tamaño(30rem, 19rem);
+            margin-left: 18%;
+            margin-right: 35%;
+            }
+        }
+    }
+
+    /* FORMULARIO */
+    main{
+        .boton-enviar{
+            margin: auto auto 1rem auto;
+        }
+    }
+
+    /* FOOTER */
+    footer{
+        .container{
+            margin-top: 1.25rem;
+            .redes-general{
+                margin-right: 20px;
+                img{
+                    @include tamaño(2rem, 2rem);
+                }
+            }
+            .copyright{
+                font-size: 1.5rem;
+            }
+        }
+        .container-fluid{
+            .col-md-5{
+                img{
+                    @include tamaño(2rem, 2rem);
+                }
+            }
+            .col-md-7{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
